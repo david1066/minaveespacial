@@ -145,38 +145,7 @@
                 scene.add(sphere);
                 sphere.position.y=4;
               }
-              function merge(){
-              	singleGeometry = new THREE.Geometry();
-              	var Mesh1 = new THREE.Mesh(sphere1);
-              	var Mesh2 = new THREE.Mesh(sphere2);
-              	var Mesh3 = new THREE.Mesh(sphere3);
-                var Mesh4 = new THREE.Mesh(sphere4);
-                var Mesh5 = new THREE.Mesh(sphere5);
-                var Mesh6 = new THREE.Mesh(sphere6);
-                var Mesh7 = new THREE.Mesh(sphere7);
-                var Mesh8 = new THREE.Mesh(sphere8);
-                Mesh1.updateMatrix();
-                    singleGeometry.merge(Mesh1.geometry, Mesh1.matrix);
-                Mesh2.updateMatrix();
-                singleGeometry.merge(Mesh2.geometry, Mesh2.matrix);
-                Mesh3.updateMatrix();
-                singleGeometry.merge(Mesh3.geometry, Mesh3.matrix);
-                Mesh4.updateMatrix();
-                singleGeometry.merge(Mesh4.geometry, Mesh4.matrix);
-                Mesh5.updateMatrix();
-                  singleGeometry.merge(Mesh5.geometry, Mesh5.matrix);
-                Mesh6.updateMatrix();
-                 singleGeometry.merge(Mesh6.geometry, Mesh6.matrix);
-                Mesh7.updateMatrix();
-                singleGeometry.merge(Mesh7.geometry, Mesh7.matrix);
-                Mesh8.updateMatrix();
-                singleGeometry.merge(Mesh8.geometry, Mesh8.matrix);
               
-                 
-                  var material = new THREE.MeshPhongMaterial({color: 0xFF0000});
-                 var messh = new THREE.Mesh(singleGeometry, material);
-                 scene.add(mesh);
-              }
 
               
                  function crearesferaspequeñas(){
